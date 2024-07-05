@@ -1,0 +1,37 @@
+[ 
+  {
+    "role": "SAP Operator",
+    "organisation": "No Frills Store",
+    "startDate": "June, 2023",
+    "endDate": "Present",
+    "experiences": ["Experienced SAP device operator at No Frills, with a focus on efficient inventory management and seamless retail operations."],
+    "imageSrc": "history/loblaws.png"
+  },
+  {
+    "role": "Full Stack Developer Intern",
+    "organisation": "Nexasoft Technologies",
+    "startDate": "July, 2022",
+    "endDate": "Dec, 2022",
+    "experiences": [
+      "Adept in designing, developing, and maintaining responsive web applications using React for front-end and MongoDB for database management."
+    ],
+    "imageSrc": "history/nexa.jpg"
+  },
+  
+  {
+    "role": "Data Quality Analyst",
+    "organisation": "CIMS Hospital",
+    "startDate": "Jan, 2023",
+    "endDate": "April, 2023",
+    "experiences": ["Experienced Data Validation Specialist skilled in verifying and ensuring the accuracy of the data across systems. Proficient in identifying discrepancies and maintaning data integrity for optimal business operations."],
+    "imageSrc": "history/cims.png"
+  },
+  {
+    "role": "Data Analyst - Intern",
+    "organisation": "TCS",
+    "startDate": "Jan, 2022",
+    "endDate": "June, 2022",
+    "experiences": ["Utilized PowerBi for data analysis, Achieving a 15% efficiency boost in resource allocation processes, showcasing my technical prowess and impact-driven approach"],
+    "imageSrc": "history/tcs.png"
+  }
+]

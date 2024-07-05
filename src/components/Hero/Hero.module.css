@@ -1,0 +1,235 @@
+@import "../../vars.css";
+
+/* Container Styles */
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+    z-index: 1;
+    margin-right: 10%;
+    flex-wrap: wrap;
+}
+
+/* Content Styles */
+.content {
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+    max-width: 50%;
+}
+
+/* Button Group Styles */
+.butts {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.butts:hover {
+    color: blanchedalmond;
+}
+
+/* Title Styles */
+.title {
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 33px;
+    font-family: var(--font-roboto);
+    background: linear-gradient(
+        90deg, 
+        rgba(255, 255, 255, 1) 70%, 
+        rgba(255, 255, 255, 0) 120%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* Description Styles */
+.description {
+    font-size: 20px;
+    font-family: var(--font-roboto);
+    margin-bottom: 52px;
+    text-align: justify;
+}
+
+/* Contact Button Styles */
+.contactBtn {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 17px 26px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contactBtn:hover {
+    background-color: gray;
+}
+
+/* Hero Image Styles */
+.heroImg {
+    width: 350px;
+    height: 350px;
+    z-index: 1;
+    border-radius: 50%;
+    animation: floating 3s infinite ease-in-out;
+    max-width: 40%;
+}
+
+/* Floating Animation */
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+/* Blur Background Styles */
+.topBlur {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    min-width: 350px;
+    min-height: 350px;
+    top: -128px;
+    left: -10vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+/* .bottomBlur {
+    position: absolute;
+    width: 70vw;
+    height: 50vw;
+    min-width: 250px;
+    min-height: 350px;
+    top: 246px;
+    left: -10vw;
+    right: -25vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+} */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .title {
+        font-size: 60px;
+        z-index: 1;
+    }
+
+    .description {
+        font-size: 25px;
+    }
+
+    .contactBtn {
+        font-size: 25px;
+        padding: 15px 20px;
+    }
+
+    .heroImg {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 830px) {
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .content {
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .title {
+        z-index: 1;
+        font-size: 50px;
+    }
+
+    .description {
+        font-size: 22px;
+    }
+
+    .contactBtn {
+        font-size: 22px;
+        padding: 12px 18px;
+    }
+
+    .heroImg {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .description {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contactBtn {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .heroImg {
+        width: 200px;
+        height: 200px;
+    }
+
+    .butts {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .contactBtn {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+    .heroImg {
+        width: 150px;
+        height: 150px;
+    }
+}
