@@ -30,7 +30,24 @@
 } */
 
 .eduImage{
-    width: 35%;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 30%;
+    box-shadow: 10px 5px 5px black;
+    animation: floating 3s infinite ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
 }
 
 .eduItems{
