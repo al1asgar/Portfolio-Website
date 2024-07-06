@@ -21,7 +21,7 @@ export const Hero = () => {
                     <div>
                 
                     </div>
-                    <a href="/resume.pdf" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">Download My Resume</a>
+                    {/* <a href="/resume.pdf" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">Download My Resume</a> */}
                     <a className={styles.contactBtn} href="https://ca.linkedin.com/in/al1asgar-dohadwala5253">My LinkedIn Profile</a>
                 </div>
             </div>
